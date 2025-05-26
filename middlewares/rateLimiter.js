@@ -9,7 +9,7 @@ const apiLimiter = rateLimit({
 // Add a specific limiter for contact forms (customize as needed)
 const contactFormLimiter = rateLimit({
   windowMs: 60 * 60 * 1000, // 1 hour
-  max: 5, // limit each IP to 5 contact form submissions per hour
+  max: 20, // limit each IP to 5 contact form submissions per hour
   message: 'Too many contact form submissions from this IP, please try again after an hour',
 });
 
